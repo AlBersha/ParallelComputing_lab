@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParallelComputing_lab", "ParallelComputing_lab\ParallelComputing_lab.csproj", "{B51A7553-2B13-4512-B3E5-CC9BC98843A5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B51A7553-2B13-4512-B3E5-CC9BC98843A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B51A7553-2B13-4512-B3E5-CC9BC98843A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B51A7553-2B13-4512-B3E5-CC9BC98843A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B51A7553-2B13-4512-B3E5-CC9BC98843A5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
