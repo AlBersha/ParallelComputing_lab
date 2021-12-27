@@ -1,5 +1,4 @@
-﻿using System.Net.Http.Headers;
-using System.Threading;
+﻿using System.Threading;
 
 namespace ParallelComputing_lab.Helper
 {

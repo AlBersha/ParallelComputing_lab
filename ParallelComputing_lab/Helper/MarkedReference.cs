@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace ParallelComputing_lab.Helper
+﻿namespace ParallelComputing_lab.Helper
 {
     public class MarkedReference<T>
     {
