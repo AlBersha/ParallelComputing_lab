@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Threading;
-using ParallelComputing_lab.Node;
+using ParallelComputing_lab.Nodes;
 
 namespace ParallelComputing_lab
 {

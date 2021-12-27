@@ -1,4 +1,4 @@
-﻿namespace ParallelComputing_lab.Node
+﻿namespace ParallelComputing_lab.Nodes
 {
     public class QueueNode<T>
     {

@@ -1,6 +1,6 @@
 ﻿using System.Net.Http;
 using ParallelComputing_lab.Helper;
-using ParallelComputing_lab.Node;
+using ParallelComputing_lab.Nodes;
 
 namespace ParallelComputing_lab
 {

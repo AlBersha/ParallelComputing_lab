@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace ParallelComputing_lab
+﻿namespace ParallelComputing_lab
 {
     class Program
     {

@@ -4,7 +4,7 @@
     {
         private readonly AtomicReference<ReferenceBase<T>> _atomicReference;
         public T Value => _atomicReference.Value.Value;
-        public AtomicBool Flag => _atomicReference.Value.Flag;
+        private AtomicBool Flag => _atomicReference.Value.Flag;
 
         public MarkedReference(T value, bool flag)
         {
