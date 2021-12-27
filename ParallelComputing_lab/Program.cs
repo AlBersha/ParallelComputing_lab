@@ -6,7 +6,7 @@ namespace ParallelComputing_lab
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            
         }
     }
 }
