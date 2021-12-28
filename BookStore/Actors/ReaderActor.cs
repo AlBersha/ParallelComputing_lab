@@ -28,6 +28,14 @@ namespace BookStore.Actors
             {
                 Console.Out.WriteLine($"Reader {Reader.Name} is waiting for book {req.Book.Name}");
             });
+
+            Receive<RequestBook>(req => RequestBook(req.BookId));
+        }
+
+        private void RequestBook(Guid bookId)
+        {
+            BookStore.Tell(new RequestBook{BookId = bookId, IsReadOnly = true, Reader = Reader});
+            Console.Out.WriteLine($"Reader {Reader.Name} requested the {bookId}");
         }
     }
 }
