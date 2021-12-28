@@ -11,6 +11,9 @@ namespace ParallelComputing_lab
 
         public LockFreeSkipList()
         {
+            Top = new(int.MinValue);
+            Tail = new(int.MaxValue);
+            
             for (var i = 0; i < Top.Next.Length; i++)
             {
                 Top.Next[i] = new MarkedReference<Node<T>>(Tail, false);

@@ -49,8 +49,8 @@ namespace ParallelComputing_lab
             
             _synchronizedThreads.Clear();
         }
-        
-        private void Lock()
+
+        public void Lock()
         {
             while (!_lockedThread.CompareAndSet(null, Thread.CurrentThread))
             {
@@ -58,7 +58,7 @@ namespace ParallelComputing_lab
             }
         }
 
-        private void Unlock()
+        public void Unlock()
         {
             _lockedThread.CompareAndSet(_lockedThread.Value, null);
         }

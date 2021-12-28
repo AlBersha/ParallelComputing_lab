@@ -1,0 +1,8 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=4748e2a6_002D1d92_002D4e34_002Db93d_002D93dc532f01b6/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="CompareAndSetMutexTestPerformance" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::575089BA-04CE-44C3-9955-7DE09A68C10D::net5.0::ParallelComputing_lab.Tests.CompareAndSetMutexTests.CompareAndSetMutexTestPerformance&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::575089BA-04CE-44C3-9955-7DE09A68C10D::net5.0::ParallelComputing_lab.Tests.MichaelScottQueueTests.QueuePerformance&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::575089BA-04CE-44C3-9955-7DE09A68C10D::net5.0::ParallelComputing_lab.Tests.SkipListTests.LockFreeSkipListPerformance&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

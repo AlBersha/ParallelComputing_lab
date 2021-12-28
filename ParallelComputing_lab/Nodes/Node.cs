@@ -6,7 +6,7 @@ namespace ParallelComputing_lab.Nodes
     public class Node<T>
     {
         private static uint _seed;
-        private T Value { get; }
+        public T Value { get; }
         public int Key { get; }
         public MarkedReference<Node<T>>[] Next { get; }
         public int Top { get; }

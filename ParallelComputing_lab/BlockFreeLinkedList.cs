@@ -5,8 +5,8 @@ using ParallelComputing_lab.Nodes;
 
 namespace ParallelComputing_lab
 {
-    public class BlockFreeLinkedList<TKey, TValue>
-        where TKey : new()
+    public class BlockFreeLinkedList<TValue>
+        // where TKey : new()
         where TValue : IComparable<TValue>, new()
     {
         private LinkedListNode<TValue> Top { get; }
