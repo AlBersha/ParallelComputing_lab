@@ -54,8 +54,8 @@ namespace ParallelComputing_lab.Tests
         [Fact]
         public void LockFreeSkipListPerformance()
         {
-            _setup.Run(AddToCollection, 10);
-            _setup.Run(RemoveFromCollection, 10);
+            _setup.Run(AddToCollection, 5);
+            _setup.Run(RemoveFromCollection, 5);
             
             Assert.Equal(_pushedValue.OrderBy(x => x), _popedValue.OrderBy(x => x));
         }

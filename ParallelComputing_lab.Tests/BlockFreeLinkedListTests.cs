@@ -7,11 +7,11 @@ namespace ParallelComputing_lab.Tests
 {
     public class BlockFreeLinkedListTests
     {
-        private BlockFreeLinkedList<int> _linkedList;
-        private SynchronizedCollection<int> _pushedValue;
-        private SynchronizedCollection<int> _popedValue;
-        private ConcurrentStack<int> _pending;
-        private Setup _setup;
+        private readonly BlockFreeLinkedList<int> _linkedList;
+        private readonly SynchronizedCollection<int> _pushedValue;
+        private readonly SynchronizedCollection<int> _popedValue;
+        private readonly ConcurrentStack<int> _pending;
+        private readonly Setup _setup;
 
         public BlockFreeLinkedListTests()
         {
