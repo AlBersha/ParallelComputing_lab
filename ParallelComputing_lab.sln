@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParallelComputing_lab", "ParallelComputing_lab\ParallelComputing_lab.csproj", "{B51A7553-2B13-4512-B3E5-CC9BC98843A5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore", "BookStore\BookStore.csproj", "{C0A554C1-DCEB-4FE4-939A-86DC2208AA5F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{B51A7553-2B13-4512-B3E5-CC9BC98843A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B51A7553-2B13-4512-B3E5-CC9BC98843A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B51A7553-2B13-4512-B3E5-CC9BC98843A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0A554C1-DCEB-4FE4-939A-86DC2208AA5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0A554C1-DCEB-4FE4-939A-86DC2208AA5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0A554C1-DCEB-4FE4-939A-86DC2208AA5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0A554C1-DCEB-4FE4-939A-86DC2208AA5F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
