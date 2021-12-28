@@ -6,10 +6,10 @@ namespace ParallelComputing_lab.Tests
 {
     public class MichaelScottQueueTests
     {
-        private MichaelScottQueue<int> _michaelScottQueue;
-        private SynchronizedCollection<int> _addedValues;
-        private SynchronizedCollection<int> _removedValues;
-        private Setup _setup;
+        private readonly MichaelScottQueue<int> _michaelScottQueue;
+        private readonly SynchronizedCollection<int> _addedValues;
+        private readonly SynchronizedCollection<int> _removedValues;
+        private readonly Setup _setup;
 
         public MichaelScottQueueTests()
         {

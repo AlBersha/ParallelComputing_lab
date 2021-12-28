@@ -9,9 +9,9 @@ namespace ParallelComputing_lab.Tests
     public class CompareAndSetMutexTests
     {
         private const int MaxCapasity = 3;
-        private MutexCAS _mutexCas;
-        private Queue<int> _nums;
-        private Random _random;
+        private readonly MutexCAS _mutexCas;
+        private readonly Queue<int> _nums;
+        private readonly Random _random;
 
         public CompareAndSetMutexTests()
         {
@@ -20,36 +20,6 @@ namespace ParallelComputing_lab.Tests
             _random = new Random();
         }
         
-        [Fact]
-        public void CompareAndSetMutexTestPerformance()
-        {
-            var threads = new List<Thread>
-            {
-                new(Enqueue),
-                new(Enqueue),
-                new(Dequeue),
-                new(Enqueue),
-                new(Dequeue),
-                new(Enqueue),
-                new(Dequeue),
-                new(Dequeue),
-                new(Dequeue),
-                new(Enqueue)
-            };
-
-            Parallel.ForEach(threads, t =>
-            {
-                t.Start(_random.Next(0, 10));
-            });
-
-            foreach (var thread in threads)
-            {
-                thread.Join();
-            }
-            
-            Assert.Empty(_nums);
-        }
-
         private void Enqueue(object? obj)
         {
             _mutexCas.Lock();
@@ -82,6 +52,36 @@ namespace ParallelComputing_lab.Tests
             Thread.Sleep(1500);
             
             _mutexCas.Unlock();
+        }
+        
+        [Fact]
+        public void CompareAndSetMutexTestPerformance()
+        {
+            var threads = new List<Thread>
+            {
+                new(Enqueue),
+                new(Enqueue),
+                new(Dequeue),
+                new(Enqueue),
+                new(Dequeue),
+                new(Enqueue),
+                new(Dequeue),
+                new(Dequeue),
+                new(Dequeue),
+                new(Enqueue)
+            };
+
+            Parallel.ForEach(threads, t =>
+            {
+                t.Start(_random.Next(0, 10));
+            });
+
+            foreach (var thread in threads)
+            {
+                thread.Join();
+            }
+            
+            Assert.Empty(_nums);
         }
     }
 }
